@@ -1,0 +1,6 @@
+node_modules/
+.env
+firmware/gl_tower_node/config.h
+mosquitto/config/passwd
+api/test/results.json
+tests/*_results.json

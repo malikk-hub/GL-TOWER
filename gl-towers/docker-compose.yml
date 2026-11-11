@@ -1,0 +1,46 @@
+# GL Towers — full stack: TimescaleDB + Mosquitto + API/web app
+# 1) ./mosquitto/config/make_passwd.sh <api-password> <device-password>   (needs mosquitto_passwd, or see README)
+# 2) cp .env.example .env  and set the same passwords
+# 3) docker compose up -d   ->  http://localhost:3000
+services:
+  db:
+    image: timescale/timescaledb:latest-pg16
+    environment:
+      POSTGRES_DB: gltowers
+      POSTGRES_USER: gltowers
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-gltowers}
+    volumes:
+      - dbdata:/var/lib/postgresql/data
+      - ./db/init.sql:/docker-entrypoint-initdb.d/01-init.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U gltowers -d gltowers"]
+      interval: 5s
+      retries: 20
+    restart: unless-stopped
+
+  mqtt:
+    image: eclipse-mosquitto:2
+    ports:
+      - "1883:1883"            # ESP32 nodes connect here
+    volumes:
+      - ./mosquitto/config:/mosquitto/config:ro
+      - mqttdata:/mosquitto/data
+    restart: unless-stopped
+
+  api:
+    build: { context: ., dockerfile: api/Dockerfile }
+    depends_on:
+      db: { condition: service_healthy }
+      mqtt: { condition: service_started }
+    environment:
+      DATABASE_URL: postgres://gltowers:${DB_PASSWORD:-gltowers}@db:5432/gltowers
+      MQTT_URL: mqtt://mqtt:1883
+      MQTT_USERNAME: api
+      MQTT_PASSWORD: ${MQTT_API_PASSWORD:-api-dev-pass}
+    ports:
+      - "3000:3000"            # web application + REST API + WebSocket
+    restart: unless-stopped
+
+volumes:
+  dbdata:
+  mqttdata:

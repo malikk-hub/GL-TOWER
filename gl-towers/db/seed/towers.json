@@ -1,0 +1,498 @@
+[
+ {
+  "id": "tower-01",
+  "name": "Tower 01",
+  "location": "GreenLab HQ",
+  "status": "Online",
+  "stage": "Vegetative",
+  "installed": "Aug 12, 2026",
+  "type": "Standard (3 modules)",
+  "reservoir": 92,
+  "ph": 6.1,
+  "ec": 1.6,
+  "waterTemp": 22.3,
+  "airTemp": 22.8,
+  "humidity": 71,
+  "lastSync": "1 min ago",
+  "lighting": {
+   "enabled": true,
+   "preset": "Standard",
+   "start": "06:00",
+   "end": "22:00",
+   "brightness": 70,
+   "photoperiod": 16
+  },
+  "pump": {
+   "enabled": true,
+   "pumpOn": 1,
+   "pumpPause": 90,
+   "start": "06:00",
+   "end": "22:00",
+   "nightBreak": true,
+   "profile": "Standard Hydro"
+  },
+  "modules": [
+   {
+    "name": "Top Module",
+    "plants": [
+     "basil",
+     "lettuce",
+     "kale"
+    ],
+    "waterLevel": 92,
+    "growDays": 16
+   },
+   {
+    "name": "Middle Module",
+    "plants": [
+     "basil",
+     "lettuce",
+     "kale"
+    ],
+    "waterLevel": 92,
+    "growDays": 21
+   },
+   {
+    "name": "Bottom Module",
+    "plants": [
+     "basil",
+     "lettuce",
+     "kale"
+    ],
+    "waterLevel": 92,
+    "growDays": 32
+   }
+  ]
+ },
+ {
+  "id": "tower-02",
+  "name": "Tower 02",
+  "location": "GreenLab HQ",
+  "status": "Online",
+  "stage": "Flowering",
+  "installed": "Aug 13, 2026",
+  "type": "Standard (3 modules)",
+  "reservoir": 78,
+  "ph": 6.2,
+  "ec": 1.8,
+  "waterTemp": 22.6,
+  "airTemp": 23.2,
+  "humidity": 68,
+  "lastSync": "1 min ago",
+  "lighting": {
+   "enabled": true,
+   "preset": "Bloom",
+   "start": "06:00",
+   "end": "18:00",
+   "brightness": 100,
+   "photoperiod": 12
+  },
+  "pump": {
+   "enabled": true,
+   "pumpOn": 1,
+   "pumpPause": 75,
+   "start": "06:00",
+   "end": "22:30",
+   "nightBreak": true,
+   "profile": "Flowering Boost"
+  },
+  "modules": [
+   {
+    "name": "Top Module",
+    "plants": [
+     "strawberry",
+     "basil",
+     "mint"
+    ],
+    "waterLevel": 78,
+    "growDays": 16
+   },
+   {
+    "name": "Middle Module",
+    "plants": [
+     "strawberry",
+     "basil",
+     "mint"
+    ],
+    "waterLevel": 78,
+    "growDays": 21
+   },
+   {
+    "name": "Bottom Module",
+    "plants": [
+     "strawberry",
+     "basil",
+     "mint"
+    ],
+    "waterLevel": 78,
+    "growDays": 32
+   }
+  ]
+ },
+ {
+  "id": "tower-03",
+  "name": "Tower 03",
+  "location": "Research Lab",
+  "status": "Online",
+  "stage": "Vegetative",
+  "installed": "Aug 14, 2026",
+  "type": "Standard (3 modules)",
+  "reservoir": 88,
+  "ph": 6,
+  "ec": 1.5,
+  "waterTemp": 22.1,
+  "airTemp": 22.4,
+  "humidity": 70,
+  "lastSync": "1 min ago",
+  "lighting": {
+   "enabled": true,
+   "preset": "Standard",
+   "start": "06:00",
+   "end": "22:00",
+   "brightness": 70,
+   "photoperiod": 16
+  },
+  "pump": {
+   "enabled": true,
+   "pumpOn": 1,
+   "pumpPause": 90,
+   "start": "06:00",
+   "end": "22:00",
+   "nightBreak": true,
+   "profile": "Standard Hydro"
+  },
+  "modules": [
+   {
+    "name": "Top Module",
+    "plants": [
+     "parsley",
+     "spinach",
+     "coriander"
+    ],
+    "waterLevel": 88,
+    "growDays": 16
+   },
+   {
+    "name": "Middle Module",
+    "plants": [
+     "parsley",
+     "spinach",
+     "coriander"
+    ],
+    "waterLevel": 88,
+    "growDays": 21
+   },
+   {
+    "name": "Bottom Module",
+    "plants": [
+     "parsley",
+     "spinach",
+     "coriander"
+    ],
+    "waterLevel": 88,
+    "growDays": 32
+   }
+  ]
+ },
+ {
+  "id": "tower-04",
+  "name": "Tower 04",
+  "location": "Research Lab",
+  "status": "Offline",
+  "stage": "Empty",
+  "installed": "Aug 15, 2026",
+  "type": "Standard (3 modules)",
+  "reservoir": 0,
+  "ph": "—",
+  "ec": "—",
+  "waterTemp": "—",
+  "airTemp": "—",
+  "humidity": "—",
+  "lastSync": "2 h ago",
+  "lighting": {
+   "enabled": false,
+   "preset": "Standard",
+   "start": "06:00",
+   "end": "22:00",
+   "brightness": 70,
+   "photoperiod": 16
+  },
+  "pump": {
+   "enabled": false,
+   "pumpOn": 1,
+   "pumpPause": 90,
+   "start": "06:00",
+   "end": "22:00",
+   "nightBreak": true,
+   "profile": "Standard Hydro"
+  },
+  "modules": [
+   {
+    "name": "Top Module",
+    "plants": [],
+    "waterLevel": 0,
+    "growDays": 16
+   },
+   {
+    "name": "Middle Module",
+    "plants": [],
+    "waterLevel": 0,
+    "growDays": 21
+   },
+   {
+    "name": "Bottom Module",
+    "plants": [],
+    "waterLevel": 0,
+    "growDays": 32
+   }
+  ]
+ },
+ {
+  "id": "tower-05",
+  "name": "Tower 05",
+  "location": "Warehouse 1",
+  "status": "Online",
+  "stage": "Seedling",
+  "installed": "Aug 16, 2026",
+  "type": "Standard (3 modules)",
+  "reservoir": 65,
+  "ph": 6.3,
+  "ec": 1.4,
+  "waterTemp": 21.9,
+  "airTemp": 22.1,
+  "humidity": 74,
+  "lastSync": "1 min ago",
+  "lighting": {
+   "enabled": true,
+   "preset": "Seedling",
+   "start": "06:00",
+   "end": "22:00",
+   "brightness": 30,
+   "photoperiod": 16
+  },
+  "pump": {
+   "enabled": true,
+   "pumpOn": 1,
+   "pumpPause": 90,
+   "start": "06:00",
+   "end": "22:00",
+   "nightBreak": true,
+   "profile": "Standard Hydro"
+  },
+  "modules": [
+   {
+    "name": "Top Module",
+    "plants": [
+     "radish-microgreens",
+     "mint",
+     "lettuce"
+    ],
+    "waterLevel": 65,
+    "growDays": 16
+   },
+   {
+    "name": "Middle Module",
+    "plants": [
+     "radish-microgreens",
+     "mint",
+     "lettuce"
+    ],
+    "waterLevel": 65,
+    "growDays": 21
+   },
+   {
+    "name": "Bottom Module",
+    "plants": [
+     "radish-microgreens",
+     "mint",
+     "lettuce"
+    ],
+    "waterLevel": 65,
+    "growDays": 32
+   }
+  ]
+ },
+ {
+  "id": "tower-06",
+  "name": "Tower 06",
+  "location": "Warehouse 1",
+  "status": "Online",
+  "stage": "Vegetative",
+  "installed": "Aug 17, 2026",
+  "type": "Standard (3 modules)",
+  "reservoir": 90,
+  "ph": 6.1,
+  "ec": 1.7,
+  "waterTemp": 22.4,
+  "airTemp": 22.9,
+  "humidity": 72,
+  "lastSync": "1 min ago",
+  "lighting": {
+   "enabled": true,
+   "preset": "Standard",
+   "start": "06:00",
+   "end": "22:00",
+   "brightness": 70,
+   "photoperiod": 16
+  },
+  "pump": {
+   "enabled": true,
+   "pumpOn": 1,
+   "pumpPause": 90,
+   "start": "06:00",
+   "end": "22:00",
+   "nightBreak": true,
+   "profile": "Standard Hydro"
+  },
+  "modules": [
+   {
+    "name": "Top Module",
+    "plants": [
+     "kale",
+     "basil",
+     "spinach"
+    ],
+    "waterLevel": 90,
+    "growDays": 16
+   },
+   {
+    "name": "Middle Module",
+    "plants": [
+     "kale",
+     "basil",
+     "spinach"
+    ],
+    "waterLevel": 90,
+    "growDays": 21
+   },
+   {
+    "name": "Bottom Module",
+    "plants": [
+     "kale",
+     "basil",
+     "spinach"
+    ],
+    "waterLevel": 90,
+    "growDays": 32
+   }
+  ]
+ },
+ {
+  "id": "tower-07",
+  "name": "Tower 07",
+  "location": "Retail Store",
+  "status": "Online",
+  "stage": "Flowering",
+  "installed": "Aug 18, 2026",
+  "type": "Standard (3 modules)",
+  "reservoir": 70,
+  "ph": 6.2,
+  "ec": 1.9,
+  "waterTemp": 22.8,
+  "airTemp": 23.4,
+  "humidity": 66,
+  "lastSync": "1 min ago",
+  "lighting": {
+   "enabled": true,
+   "preset": "Bloom",
+   "start": "06:00",
+   "end": "18:00",
+   "brightness": 100,
+   "photoperiod": 12
+  },
+  "pump": {
+   "enabled": true,
+   "pumpOn": 1,
+   "pumpPause": 75,
+   "start": "06:00",
+   "end": "22:30",
+   "nightBreak": true,
+   "profile": "Flowering Boost"
+  },
+  "modules": [
+   {
+    "name": "Top Module",
+    "plants": [
+     "strawberry",
+     "oregano",
+     "thyme"
+    ],
+    "waterLevel": 70,
+    "growDays": 16
+   },
+   {
+    "name": "Middle Module",
+    "plants": [
+     "strawberry",
+     "oregano",
+     "thyme"
+    ],
+    "waterLevel": 70,
+    "growDays": 21
+   },
+   {
+    "name": "Bottom Module",
+    "plants": [
+     "strawberry",
+     "oregano",
+     "thyme"
+    ],
+    "waterLevel": 70,
+    "growDays": 32
+   }
+  ]
+ },
+ {
+  "id": "tower-08",
+  "name": "Tower 08",
+  "location": "Retail Store",
+  "status": "Maintenance",
+  "stage": "Empty",
+  "installed": "Aug 19, 2026",
+  "type": "Standard (3 modules)",
+  "reservoir": 45,
+  "ph": 6,
+  "ec": 1.5,
+  "waterTemp": 22,
+  "airTemp": 22,
+  "humidity": 69,
+  "lastSync": "1 min ago",
+  "lighting": {
+   "enabled": true,
+   "preset": "Standard",
+   "start": "06:00",
+   "end": "22:00",
+   "brightness": 70,
+   "photoperiod": 16
+  },
+  "pump": {
+   "enabled": true,
+   "pumpOn": 1,
+   "pumpPause": 90,
+   "start": "06:00",
+   "end": "22:00",
+   "nightBreak": true,
+   "profile": "Standard Hydro"
+  },
+  "modules": [
+   {
+    "name": "Top Module",
+    "plants": [],
+    "waterLevel": 45,
+    "growDays": 16
+   },
+   {
+    "name": "Middle Module",
+    "plants": [],
+    "waterLevel": 45,
+    "growDays": 21
+   },
+   {
+    "name": "Bottom Module",
+    "plants": [],
+    "waterLevel": 45,
+    "growDays": 32
+   }
+  ]
+ }
+]

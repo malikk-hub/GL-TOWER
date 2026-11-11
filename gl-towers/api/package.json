@@ -1,0 +1,23 @@
+{
+  "name": "gl-towers-api",
+  "version": "1.0.0",
+  "description": "GL Towers REST API, MQTT bridge, alert engine and WebSocket push",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/index.js",
+    "seed": "node src/seed.js",
+    "test": "node --test --test-concurrency=1 test/alerts.unit.test.js test/integration.test.js",
+    "test:unit": "node --test test/alerts.unit.test.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^4.22.3",
+    "mqtt": "^5.16.1",
+    "pg": "^8.23.1",
+    "ws": "^8.22.2"
+  }
+}

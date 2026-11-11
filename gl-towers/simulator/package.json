@@ -1,0 +1,12 @@
+{
+  "name": "gl-towers-simulator",
+  "version": "1.0.0",
+  "description": "Simulates GL Towers ESP32 sensor nodes over MQTT (same topics and messages as the firmware)",
+  "main": "simulate.js",
+  "scripts": {
+    "start": "node simulate.js"
+  },
+  "dependencies": {
+    "mqtt": "^5.16.1"
+  }
+}

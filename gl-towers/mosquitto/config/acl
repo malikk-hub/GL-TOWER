@@ -1,0 +1,9 @@
+# The API (user "api") sees every tower
+user api
+topic readwrite gltowers/#
+
+# Each tower node logs in with its tower id as username (e.g. "tower-01")
+# and may only publish its own data and read its own commands.
+pattern write gltowers/main/%u/sensors
+pattern write gltowers/main/%u/state
+pattern read  gltowers/main/%u/cmd
